@@ -9,7 +9,14 @@
         - "SN_USERNAME: {{ lookup('env','SN_USERNAME') }}"
         - "SN_HOST: {{ lookup('env','SN_HOST') }}"
 
+    - name: assign the env vars to a fact
+      set_fact:
+        sn_username: "{{ lookup('env','SN_USERNAME') }}"
 #        - "sn_username {{ sn_username }}"
 #        - "sn_host: {{ sn_host }}"
 
+    - name: assign the env vars to a fact
+      debug:
+        msg: 
+        - "sn_username: {{ sn_username }}"
 
