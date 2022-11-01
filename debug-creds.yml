@@ -6,8 +6,8 @@
     - name: Print the ENV and facts
       debug:
         msg: 
-        - "SN_USERNAME: {{ SN_USERNAME }}"
-        - "SN_HOST: {{ SN_HOST }}"
+        - "SN_USERNAME: {{ lookup('env','SN_USERNAME') }}"
+        - "SN_HOST: {{ lookup('env','SN_HOST' }}"
         - "sn_username {{ sn_username }}"
         - "sn_host: {{ sn_host }}"
 
