@@ -4,6 +4,7 @@
 
 ### Custom Credential Configuration
 
+Input Configuration
 ```yaml
 fields:
   - id: sn_username
@@ -24,4 +25,12 @@ required:
   - sn_host
 
 
+```
+
+Injector configuration
+```yaml
+env:
+  SN_HOST: '{{ sn_host }}'
+  SN_PASSWORD: '{{ sn_password }}'
+  SN_USERNAME: '{{ sn_username }}'
 ```
