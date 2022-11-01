@@ -8,7 +8,8 @@
         msg: 
         - "SN_USERNAME: {{ lookup('env','SN_USERNAME') }}"
         - "SN_HOST: {{ lookup('env','SN_HOST') }}"
-        - "sn_username {{ sn_username }}"
-        - "sn_host: {{ sn_host }}"
+
+#        - "sn_username {{ sn_username }}"
+#        - "sn_host: {{ sn_host }}"
 
 
